@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "sex": "male",
+      "skill": "react js , mongo db",
+      "experience": [
+        "one year at enosis",
+        "two year at springboot"
+      ],
+      "DOB": "17-03-1998"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "sex": "male",
+      "skill": "react js,   mongo db",
+      "experience": "one year at enosis,    two year at springboot",
+      "DOB": "17-03-1998"
+    },
+    {
+      "name": "Sakirul",
+      "sex": "Male",
+      "email": "sakirulalam@gmail.com",
+      "skill": "mongoDB,  JSON",
+      "experience": "2years ",
+      "DOB": "19-01-1998",
+      "id": 3
+    },
+    {
+      "name": "sayonti",
+      "sex": "female",
+      "email": "sayonti@tasnim",
+      "skill": "Js",
+      "experience": "1 year",
+      "DOB": "17-02-96",
+      "id": 4
+    }
+  ]
+}

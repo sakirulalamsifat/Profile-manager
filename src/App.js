@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import LoginWithHooks from './components/LoginWithHooks'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Home from './components/pages/Home'
+import Contact from './components/pages/Contact'
+import Navbar from './components/layout/Navbar'
+import NotFound from './components/pages/NotFound'
+import AddUser from './components/users/AddUser'
+import EditUser from './components/users/EditUser'
+import User from './components/users/User'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <BrowserRouter>
+        
+        <Switch>
+          <Route path='/' component={LoginWithHooks} exact />
+          <Route exact path='/home' component={Home} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/users/add' component={AddUser} />
+          <Route exact path='/users/edit/:id' component={EditUser} />
+          <Route exact path='/users/:id' component={User} />
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
